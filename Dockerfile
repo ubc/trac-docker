@@ -1,7 +1,7 @@
 FROM debian:buster
 
 RUN apt update \
-   && apt install -y --no-install-recommends python curl ca-certificates \
+   && apt install -y --no-install-recommends python curl ca-certificates python-pymysql \
    && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
    && python get-pip.py \
    && rm get-pip.py \
