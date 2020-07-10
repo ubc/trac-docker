@@ -5,7 +5,7 @@ RUN apt update \
    && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
    && python get-pip.py \
    && rm get-pip.py \
-   && pip install trac babel pytz docutils pygments textile TracTags genshi TracAccountManager TracGoogleAnalytics TracSpamFilter svn+https://trac-hacks.org/svn/fullblogplugin/1.4 svn+https://trac-hacks.org/svn/tocmacro/0.11 \
+   && pip install trac babel pytz docutils pygments textile TracTags genshi TracGoogleAnalytics TracSpamFilter svn+https://trac-hacks.org/svn/fullblogplugin/1.4 svn+https://trac-hacks.org/svn/tocmacro/0.11 svn+https://trac-hacks.org/svn/accountmanagerplugin/trunk \
    && trac-admin /home/trac initenv trac sqlite:db/trac.db \
    && rm -rf /var/lib/apt/lists/*
 
